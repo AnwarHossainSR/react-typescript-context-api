@@ -1,7 +1,14 @@
 import React from "react";
+import Controlls from "./components/controlls";
+import Display from "./components/Display";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <Display />
+      <Controlls />
+    </>
+  );
 };
 
 export default App;

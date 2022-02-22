@@ -4,10 +4,8 @@ import App from "./App";
 import { CounterProvider } from "./components/shared/context";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <CounterProvider>
-      <App />
-    </CounterProvider>
-  </React.StrictMode>,
+  <CounterProvider>
+    <App />
+  </CounterProvider>,
   document.getElementById("root")
 );

@@ -1,10 +1,11 @@
 import React from "react";
+import { Dispatch } from "./types/ActionTypes";
 
-const Controlls = () => {
+const Controlls = ({ handler }: { handler: Dispatch }) => {
   return (
     <div className="controll">
-      <button>+</button>
-      <button>-</button>
+      <button onClick={handler("increment")}>sdfdsf+</button>
+      <button onClick={handler("decrement")}>-</button>
     </div>
   );
 };

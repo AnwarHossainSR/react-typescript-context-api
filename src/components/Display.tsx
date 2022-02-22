@@ -1,8 +1,9 @@
 import React from 'react'
+import { State } from './shared/context'
 
-const Display = () => {
+const Display = ({count}:State) => {
   return (
-    <div>0</div>
+    <div>{count}</div>
   )
 }
 
